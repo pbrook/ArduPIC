@@ -1,0 +1,8 @@
+Arduino based PIC programmer.
+
+Data pins are as follows:
+  0: RESET (active high, pull MRST to 0v)
+  1: Program enable (active high, pull MRST to +12V)
+  2: Clock
+  3: Data
+  10: [Timer1 PWM B] 100Hz clock for charge pump
