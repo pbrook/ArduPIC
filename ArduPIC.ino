@@ -7,7 +7,7 @@
 
 int led_pin = 6;
 int led2_pin = 7;
-int pump_pin = 21; // Must be Timer1 PWM output B
+int pump_pin = 19; // Must be Timer1 PWM output A
 int reset_pin = 0;
 int program_pin = 1;
 int clock_pin = 2;
@@ -512,6 +512,6 @@ void setup()
 
   // Enable charge pump (high frequency PWM)
   Timer1.initialize(10);
-  Timer1.pwm(2, 512);
+  Timer1.pwm(1, 512);
 }
 
